@@ -1,13 +1,16 @@
 
 import './App.css'
-import { Button } from './Components/Event/Button'
-import { Input } from './Components/Event/Input'
+import { Container } from './Components/Extra/Container'
+// import { Button } from './Components/Event/Button'
+// import { Input } from './Components/Event/Input'
 // import { Heading } from './Components/Advanced/Heading'
 // import { Oscar } from './Components/Advanced/Oscar'
 // import { Status } from './Components/Advanced/Status'
 // import { Greet } from './Components/Greet'
 // import { Person } from './Components/Person'
 // import { PersonList } from './Components/PersonList'
+
+
 
 function App() {
   
@@ -39,8 +42,10 @@ function App() {
         <Greet name= 'Sajitha' isLoggedIn={true}/>
       </Oscar> */}
 
-      <Button clickHandeler={(event,id)=> {console.log('Button Click',event,id)}}/>
-      <Input value='' handleChange={(event)=> console.log(event) }/>
+      {/* <Button clickHandeler={(event,id)=> {console.log('Button Click',event,id)}}/>
+      <Input value='' handleChange={(event)=> console.log(event) }/> */}
+
+      <Container styles={{border : '1px solid black', padding : '1rem', background: 'green'}}/>
     </>
   )
 }
