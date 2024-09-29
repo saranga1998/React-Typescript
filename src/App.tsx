@@ -1,6 +1,7 @@
 
 import './App.css'
-import { Container } from './Components/Extra/Container'
+import { User } from './Components/State/User'
+//import { Container } from './Components/Extra/Container'
 // import { Button } from './Components/Event/Button'
 // import { Input } from './Components/Event/Input'
 // import { Heading } from './Components/Advanced/Heading'
@@ -45,7 +46,9 @@ function App() {
       {/* <Button clickHandeler={(event,id)=> {console.log('Button Click',event,id)}}/>
       <Input value='' handleChange={(event)=> console.log(event) }/> */}
 
-      <Container styles={{border : '1px solid black', padding : '1rem', background: 'green'}}/>
+      {/* <Container styles={{border : '1px solid black', padding : '1rem', background: 'green'}}/> */}
+
+      <User/>
     </>
   )
 }
