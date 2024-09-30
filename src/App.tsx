@@ -12,9 +12,11 @@ import './App.css'
 // import { Person } from './Components/Person'
 // import { PersonList } from './Components/PersonList'
 
-import { ThemeContextProvider } from './Components/Context/ThemeContext'
-import { Box } from './Components/Context/Box'
+//import { ThemeContextProvider } from './Components/Context/ThemeContext'
+//import { Box } from './Components/Context/Box'
 
+import { UserContextProvider } from './Components/Context/UserContext'
+import { User } from './Components/State/User'
 
 function App() {
   
@@ -55,9 +57,13 @@ function App() {
 
       {/* <Counter/> */}
 
-      <ThemeContextProvider>
+      {/* <ThemeContextProvider>
         <Box/>
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
+
+      <UserContextProvider>
+        <User/>
+      </UserContextProvider>
     </>
   )
 }
