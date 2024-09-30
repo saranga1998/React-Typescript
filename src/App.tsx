@@ -1,6 +1,6 @@
 
 import './App.css'
-import { Counter } from './Components/Reduser/Counter'
+//import { Counter } from './Components/Reduser/Counter'
 //import { User } from './Components/State/User'
 //import { Container } from './Components/Extra/Container'
 // import { Button } from './Components/Event/Button'
@@ -12,6 +12,8 @@ import { Counter } from './Components/Reduser/Counter'
 // import { Person } from './Components/Person'
 // import { PersonList } from './Components/PersonList'
 
+import { ThemeContextProvider } from './Components/Context/ThemeContext'
+import { Box } from './Components/Context/Box'
 
 
 function App() {
@@ -51,7 +53,11 @@ function App() {
 
       {/* <User/> */}
 
-      <Counter/>
+      {/* <Counter/> */}
+
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
     </>
   )
 }
