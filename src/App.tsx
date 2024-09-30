@@ -1,6 +1,7 @@
 
 import './App.css'
-import { User } from './Components/State/User'
+import { Counter } from './Components/Reduser/Counter'
+//import { User } from './Components/State/User'
 //import { Container } from './Components/Extra/Container'
 // import { Button } from './Components/Event/Button'
 // import { Input } from './Components/Event/Input'
@@ -48,7 +49,9 @@ function App() {
 
       {/* <Container styles={{border : '1px solid black', padding : '1rem', background: 'green'}}/> */}
 
-      <User/>
+      {/* <User/> */}
+
+      <Counter/>
     </>
   )
 }
