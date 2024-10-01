@@ -1,6 +1,8 @@
-
 import './App.css'
-import Counter from './Components/Class/Counter'
+import { List } from './Components/Types/List';
+
+
+//import Counter from './Components/Class/Counter'
 //import { Counter } from './Components/Reduser/Counter'
 //import { User } from './Components/State/User'
 //import { Container } from './Components/Extra/Container'
@@ -21,6 +23,9 @@ import Counter from './Components/Class/Counter'
 // import { MutableRef } from './Components/Ref/MutableRef'
 // import { User } from './Components/State/User'
 
+// import { Private } from './Components/Auth/Private'
+// import { Profile } from './Components/Auth/Profile'
+
 function App() {
   
   // const personName ={
@@ -38,6 +43,16 @@ function App() {
   //     lname : 'Rajapaksha',
   //   }
   // ]
+
+  const items = [
+        { id: 1, name: 'Item 1' },
+        { id: 2, name: 'Item 2' },
+        { id: 3, name: 'Item 3' }
+    ];
+
+    const handleClick = (item: { id: number; name: string }) => {
+        alert(`You clicked on ${item.name}`);
+    };
 
   return (
     <>
@@ -72,7 +87,11 @@ function App() {
 
       <MutableRef/> */}
 
-      <Counter message='Count is' />
+      {/* <Counter message='Count is' /> */}
+
+      {/* <Private isLoggedIn={true} component={Profile}/> */}
+
+      <List items={items} onClick={handleClick}/>
     </>
   )
 }
