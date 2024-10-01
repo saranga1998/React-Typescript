@@ -16,6 +16,8 @@ import './App.css'
 //import { Box } from './Components/Context/Box'
 
 import { UserContextProvider } from './Components/Context/UserContext'
+import { DomRef } from './Components/Ref/DomRef'
+import { MutableRef } from './Components/Ref/MutableRef'
 import { User } from './Components/State/User'
 
 function App() {
@@ -64,6 +66,10 @@ function App() {
       <UserContextProvider>
         <User/>
       </UserContextProvider>
+
+      <DomRef/>
+
+      <MutableRef/>
     </>
   )
 }
