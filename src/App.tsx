@@ -1,5 +1,6 @@
 
 import './App.css'
+import Counter from './Components/Class/Counter'
 //import { Counter } from './Components/Reduser/Counter'
 //import { User } from './Components/State/User'
 //import { Container } from './Components/Extra/Container'
@@ -15,10 +16,10 @@ import './App.css'
 //import { ThemeContextProvider } from './Components/Context/ThemeContext'
 //import { Box } from './Components/Context/Box'
 
-import { UserContextProvider } from './Components/Context/UserContext'
-import { DomRef } from './Components/Ref/DomRef'
-import { MutableRef } from './Components/Ref/MutableRef'
-import { User } from './Components/State/User'
+// import { UserContextProvider } from './Components/Context/UserContext'
+// import { DomRef } from './Components/Ref/DomRef'
+// import { MutableRef } from './Components/Ref/MutableRef'
+// import { User } from './Components/State/User'
 
 function App() {
   
@@ -63,13 +64,15 @@ function App() {
         <Box/>
       </ThemeContextProvider> */}
 
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User/>
       </UserContextProvider>
 
       <DomRef/>
 
-      <MutableRef/>
+      <MutableRef/> */}
+
+      <Counter message='Count is' />
     </>
   )
 }
