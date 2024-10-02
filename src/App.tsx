@@ -1,5 +1,6 @@
 import './App.css'
-import { Toast } from './Components/Template/Toast'
+import { Button } from './Components/Html/Button'
+//import { Toast } from './Components/Template/Toast'
 //import { List } from './Components/Types/List';
 
 
@@ -98,7 +99,9 @@ function App() {
 
       {/* <RandomNo value={10} isPositive/> */}
 
-      <Toast position='right-bottom'/>
+      {/* <Toast position='right-bottom'/> */}
+
+      <Button varient='primary' onClick={()=>{console.log('Clicked')}}>Primary Button</Button>
     </>
   )
 }
