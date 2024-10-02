@@ -1,5 +1,6 @@
 import './App.css'
-import { List } from './Components/Types/List';
+import { Toast } from './Components/Template/Toast'
+//import { List } from './Components/Types/List';
 
 
 //import Counter from './Components/Class/Counter'
@@ -26,6 +27,8 @@ import { List } from './Components/Types/List';
 // import { Private } from './Components/Auth/Private'
 // import { Profile } from './Components/Auth/Profile'
 
+//import {RandomNo} from  './Components/Resticred/RandomNo'
+
 function App() {
   
   // const personName ={
@@ -44,15 +47,15 @@ function App() {
   //   }
   // ]
 
-  const items = [
-        { id: 1, name: 'Item 1' },
-        { id: 2, name: 'Item 2' },
-        { id: 3, name: 'Item 3' }
-    ];
+  // const items = [
+  //       { id: 1, name: 'Item 1' },
+  //       { id: 2, name: 'Item 2' },
+  //       { id: 3, name: 'Item 3' }
+  //   ];
 
-    const handleClick = (item: { id: number; name: string }) => {
-        alert(`You clicked on ${item.name}`);
-    };
+  //   const handleClick = (item: { id: number; name: string }) => {
+  //       alert(`You clicked on ${item.name}`);
+  //   };
 
   return (
     <>
@@ -91,7 +94,11 @@ function App() {
 
       {/* <Private isLoggedIn={true} component={Profile}/> */}
 
-      <List items={items} onClick={handleClick}/>
+      {/* <List items={items} onClick={handleClick}/> */}
+
+      {/* <RandomNo value={10} isPositive/> */}
+
+      <Toast position='right-bottom'/>
     </>
   )
 }
