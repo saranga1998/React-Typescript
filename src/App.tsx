@@ -29,7 +29,7 @@ import { Button } from './Components/Html/Button'
 // import { Profile } from './Components/Auth/Profile'
 
 //import {RandomNo} from  './Components/Resticred/RandomNo'
-
+import { Text } from './Components/Polymorphic/Text'
 function App() {
   
   // const personName ={
@@ -102,6 +102,10 @@ function App() {
       {/* <Toast position='right-bottom'/> */}
 
       <Button varient='primary' onClick={()=>{console.log('Clicked')}}>Primary Button</Button>
+
+      <Text as='h1' size='lg'>Sri Lanka</Text>
+      <Text as='p' size='md'>President</Text>
+      <Text as='label' size='sm'>Anura Kumara</Text>
     </>
   )
 }
